@@ -1,0 +1,21 @@
+{
+  "name": "personal-blog",
+  "version": "1.0.0",
+  "description": "A website starter template with the default VuePress theme and Netlify CMS config",
+  "scripts": {
+    "build": "vuepress build docs",
+    "deploy": "yarn build && npx gh-pages -d docs/.vuepress/dist",
+    "dev": "vuepress dev docs"
+  },
+  "keywords": [
+    "VuePress",
+    "Netlify",
+    "Netlify CMS",
+    "Netlify template"
+  ],
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {
+    "vuepress": "^1.8.2"
+  }
+}
