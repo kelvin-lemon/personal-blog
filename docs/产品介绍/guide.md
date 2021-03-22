@@ -1,15 +1,14 @@
 ---
-title: Guide
+title: 什么是 JAMStack
 description: How to use this template to create your new VuePress site, deploy
   it to Netlify and connect up your CMS.
 permalink: /:slug
 ---
 
-# How to use this template
+## 核心思想
 
-## Get started
-
-You do not have to deploy on Netlify to use Netlify CMS, but it is the fastest way to get started. I have also included instructions for deploying to GitHub Pages.
+JAMStack（JAM 代表 JavaScript，API 和 Markup）是一种使用 Static Site Generators (SSG) 技术、不依赖 Web Server 的前端架构。
+它的核心是：不依赖 Web Server。
 
 ### Deploy to Netlify
 
