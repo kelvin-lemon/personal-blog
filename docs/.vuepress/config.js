@@ -12,7 +12,20 @@ module.exports = {
       },
     ]
   },
-  plugins: {
-    "vuepress-plugin-auto-sidebar": {}
-  }
+  plugins: [
+      [
+        require('./plugins/auto-sidebar/index.js'),
+        {
+          sort: {
+            mode: 'custom',
+            fn: (a, b)=> {
+              if (a.frontmatter.sort && b.frontmatter.sort) {
+                return a.frontmatter.sort > b.frontmatter.sort ? -1 : 1
+              }
+              return 1
+            }
+          }
+        }
+      ]
+  ]
 };

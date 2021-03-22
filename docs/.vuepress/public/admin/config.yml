@@ -47,9 +47,11 @@ collections:
     folder: "docs/产品介绍"
     create: true
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Meta description", name: "description", widget: "string" }
-      - { label: "Meta Group", name: "autoGroup-1", widget: "string" }
+      - { label: "页面名称", name: "title", widget: "string" }
+      - { label: "页面描述", name: "description", widget: "string" }
+      - { label: "分组名", name: "autoGroup", widget: "string", required: false }
+      - { label: "分组排序", name: "groupSort", widget: "number", required: false }
+      - { label: "页面排序", name: "sort", widget: "number", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
       - {
           label: "Permalink",
