@@ -1,6 +1,5 @@
 module.exports = {
   title: "VuePress template",
-  base: "/personal-blog/",
   description:
     "A JAMstack website template with the default VuePress theme and Netlify CMS config.",
   themeConfig: {
